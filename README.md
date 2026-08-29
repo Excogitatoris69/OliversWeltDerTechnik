@@ -1,4 +1,4 @@
-# OliversWeltDerTechnik
+# Olivers Welt der Technik
 Various texts and program sources from my YouTube channel.
 (https://www.youtube.com/@Olivers-Welt-Der-Technik)
 
