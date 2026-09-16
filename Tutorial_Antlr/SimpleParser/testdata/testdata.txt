@@ -1,0 +1,46 @@
+alter=42
+name="Oliver 
+The Master"
+
+wert1=-74.12
+
+[allgemein]
+//Jetzt Stadt
+city="Muenchen // Erding"
+
+check=true
+save=False
+
+/*
+[sonstiges]
+city="Nuernberg"
+city=Augsburg
+*/
+
+
+
+
+// **************************************
+// Konfig-Datei
+// **************************************
+stage="Testumgebung"
+
+/* ===========================
+Allgemeine Einstellungen
+============================= */
+
+[Allgemein]
+dbpath="c:\\database\\mydatabase.db"
+dbname="MyDatabase"
+dbport=4243
+factor=23.57
+autostart=True
+autologin=false
+welcometext="Hallo, das ist meine
+kleine Datenbank"
+
+
+[Credentials]
+user="Admin"
+password="jHg/65&7_Gt6.54%hgv"
+

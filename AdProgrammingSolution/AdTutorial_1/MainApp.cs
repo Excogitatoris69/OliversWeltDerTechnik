@@ -16,7 +16,7 @@ namespace AdTutorial_1
             //me.genTestData();
             */
             
-            me.validateUserPassword();
+            me.generateTestData();
 
 
             #region test
@@ -195,6 +195,30 @@ namespace AdTutorial_1
 
         public void loadTestData()
         {
+            string pathRoot = @"E:\eigenes\Projekte\Tutorial_AD-Programmierung\testdaten\";
+            AdAdapterImpl aAdAdapterImpl = new AdAdapterImpl();
+
+            //aAdAdapterImpl.loadGroupFile(Path.Combine(pathRoot, "test_importgroup.csv"));
+            //aAdAdapterImpl.loadUserFile(Path.Combine(pathRoot, "test_importuser.csv"));
+            aAdAdapterImpl.loadGroupMemberOfFile(Path.Combine(pathRoot, "test_importgroupuser.csv"));
+
+        }
+
+        public void makeBackup()
+        {
+            AdAdapterImpl aAdAdapterImpl = new AdAdapterImpl();
+            aAdAdapterImpl.backupAdData(@"E:\eigenes\Projekte\Tutorial_AD-Programmierung\testdaten\backup_user.csv"
+            , "(&(objectCategory=user)(cn=p2*))");
+            //aAdAdapterImpl.backupAdData(@"E:\eigenes\Projekte\Tutorial_AD-Programmierung\testdaten\backup_group.csv"
+            //, "(&(objectCategory=group)(cn=grp_*))");
+
+        }
+
+
+        public void generateTestData()
+        {
+            TestdataGeneratorAdapter aTestdataGeneratorAdapter = new TestdataGeneratorAdapter();
+            aTestdataGeneratorAdapter.genData();
 
         }
 
